@@ -1,0 +1,148 @@
+.login-page{
+    display: flex;
+    flex-direction: column;  
+    background-color: black;
+}
+.login-registration{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem 0;
+}
+.login-header{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    z-index: 3;
+    background-color: white;
+    padding: 2rem 0;
+}
+
+.login-header h1{
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+.login-header p{
+    margin-top: 2px;
+    margin-bottom: 3rem;
+}
+/* Split the screen in half */
+.split {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 100%;
+    width: 50%;
+    /* padding:0; */
+    z-index: 1;
+  }
+  
+  /* Control the left side */
+  .left {
+    background-color: black;
+  }
+  
+  /* Control the right side */
+  .right {
+    background-color: black;
+  }
+  
+ /* If you want the content centered horizontally and vertically */
+  .centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+  
+/* Login*/
+/* body{
+    background: #bdc3c7;  
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); 
+} */
+
+.form{
+    /* border: 5px solid white; */
+    border-radius: 5px;
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    /* height: 600px; */
+}
+
+.form-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.form-body > *{
+    padding: 5px 0;
+}
+
+.form__label{
+    display: inline-block;
+    text-align: right;
+    padding:1px 10px;
+    width: 40%;
+}
+
+.form_input{
+    width: 60%;
+}
+
+.footer{
+    text-align: center;
+}
+.header h2{
+    text-align: center;
+    font-size: 200%;
+    color:white;
+    letter-spacing: 0.04rem;
+    margin: 1px;  
+}
+
+/* Login*/
+.username, .email, .password, .confirm-password{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 5px 0;
+    /* flex-grow: 1; */
+}
+
+.form-body input{
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    border: 1px solid white;
+    padding: 10px;
+    font-size: x-small;
+}
+
+.dash{
+    width: 1px;
+    height: 300px;
+    background-color: white;
+}
+
+.btn{
+    background-color:cornsilk;
+    padding: 10px 30px;
+    border-radius: 10px;
+}

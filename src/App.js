@@ -1,12 +1,12 @@
 
 import './App.css';
+import { Register } from "./pages"
 
 function App() {
   return (
-    <div className="App">
-      Hello world
-      Testing - 2nd time
-    </div>
+    
+      <Register />
+    
   );
 }
 
