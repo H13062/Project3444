@@ -1,10 +1,11 @@
 
 import './App.css';
-import { Register } from "./pages"
+import { Register, AboutUs } from "./pages"
 
 function App() {
   return (
-      <Register />
+      // <Register />
+      <AboutUs />
   );
 }
 
