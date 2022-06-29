@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       Hello world
       Testing - 2nd time
-      Testing - 3rd time weourheworheworheowr
+      Testing - 3rd time
     </div>
   );
 }
