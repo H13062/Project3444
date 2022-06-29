@@ -1,14 +1,15 @@
 import React from 'react';
 import './App.css';
-import { Register, AboutUs } from "./pages"
+import { Register, AboutUs, Home} from "./pages"
 import {Navbar} from "./component"
 
 function App() {
   return (
     <>
-      <Navbar/>
-       <Register />
+      {/* <Navbar/>
+       <Register /> */}
       {/* <AboutUs /> */}
+      <Home/>
     </>
   );
 }

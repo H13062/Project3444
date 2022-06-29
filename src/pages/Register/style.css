@@ -18,7 +18,7 @@
     z-index: 3;
     color:white;
     background-color: black;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../../assets/backgroundpic.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../../assets/backgroundpic.jpg");
     padding: 2rem 0;
     
 }
