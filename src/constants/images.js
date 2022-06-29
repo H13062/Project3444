@@ -10,6 +10,7 @@ import pho from '../assets/Pho.png';
 import roll from '../assets/springRoll.png';
 import thai from '../assets/Thaitea.jpg';
 import tk from '../assets/thitkho.jpg'
+import background from '../assets/backgroundpic.jpg'
 
 export default {
     bc,
