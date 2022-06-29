@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css';
 import {images} from '../../constants';
 
-function Register() {
+const Register = () =>  {
     return(
         <>
             <div className="login-page">

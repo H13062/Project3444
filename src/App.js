@@ -5,8 +5,8 @@ import { Register, AboutUs } from "./pages"
 function App() {
   return (
     <>
-       {/* <Register /> */}
-      <AboutUs />
+       <Register />
+      {/* <AboutUs /> */}
     </>
   );
 }
