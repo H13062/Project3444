@@ -1,0 +1,57 @@
+.app__aboutus{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    overflow: auto;
+}
+
+.app__aboutus-header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    z-index: 3;
+    padding: 3rem 0;
+}
+
+.app__aboutus-header h1{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.app__aboutus-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    background-color: black;
+    padding: 3rem 0;
+}
+
+.app__aboutus-content_p, .app__aboutus-content_img{
+    width: 50%;
+    margin: 0 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__aboutus-content_p{
+    flex-direction: column;
+}
+
+.app__aboutus-content_p p{
+    font-size: 18px;
+    color: white;
+}
+
+.app__aboutus-content_img img{
+    width: 95%;
+    border-radius: 5px;
+}
+
+.about-dash{
+    width: 1px;
+    height: 300px;
+    background-color: white;
+}
