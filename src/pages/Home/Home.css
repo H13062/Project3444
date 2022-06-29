@@ -1,6 +1,4 @@
-
-
-    
+ 
 .full-page{
     color:white;
     height: 100vh;
@@ -13,17 +11,32 @@
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../../assets/Home-background.jpg");
 }
 .Wrapper{
-    
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    overflow: auto;
+}
+.Logo{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0 0;
+}
+.Logo-p{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    margin: 0;
 }
 .button-space{
-    
+       
 }
 
 .left-button{
-    
+    width: 50%;
 }
 .right-button{
-    
+    width: 50%;
 }
 
 .dash{
