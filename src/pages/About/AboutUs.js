@@ -7,9 +7,6 @@ const AboutUs = () => {
     <div className='app__aboutus'>
         <div className='app__aboutus-cell'>
             <div className='app__aboutus-header'>
-                {/* <div className='app__aboutus-overlay'>
-                    <img src={images.background} alt='header bg'/>
-                </div> */}
                 <h1>About Us</h1>
             </div>
         </div>

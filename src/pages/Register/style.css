@@ -16,8 +16,11 @@
     text-align: center;
     height: 100%;
     z-index: 3;
-    background-color: white;
+    color:white;
+    background-color: black;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../../assets/backgroundpic.jpg");
     padding: 2rem 0;
+    
 }
 
 .login-header h1{
