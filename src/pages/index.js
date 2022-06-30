@@ -1,5 +1,5 @@
 import Register from './Register/register';
-import AboutUs from './About/AboutUs';
+import AboutUs from './About/aboutus';
 import Comment from './Comment/comment';
 import Home from './Home/Home'
 export {

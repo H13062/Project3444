@@ -11,7 +11,7 @@ const Comment = () => {
         </div>
         <div className='app__comment-field'>
             <div className='app__comment-field_input'>
-                <input placeholder='Give us your comment on the rerstaurant'/>
+                <textarea placeholder='Give us your comment on the rerstaurant'/>
                 <button type='submit'>Post Comment</button>
             </div>
 
