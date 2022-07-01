@@ -12,8 +12,8 @@ function App() {
       {/* <Navbar/> */}
        {/* <Register /> */}
       {/* <AboutUs /> */}
-      <Comment />
-      {/* <Home/> */}
+      {/* <Comment /> */}
+      <Home/>
 
     </>
   );
