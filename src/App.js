@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import { Register, AboutUs, Comment, Home } from "./pages"
+import { Register, AboutUs, Comment, Home, Menu } from "./pages"
 
 
 import {Navbar} from "./component"
@@ -9,11 +9,12 @@ import {Navbar} from "./component"
 function App() {
   return (
     <>
-      {/* <Navbar/> */}
+      <Navbar/>
        {/* <Register /> */}
       {/* <AboutUs /> */}
       {/* <Comment /> */}
       <Home/>
+      {/* <Menu/> */}
 
     </>
   );
