@@ -12,12 +12,12 @@ const Home = () => {
             </div>
             <div className='Logo-p'>
                 <p>
-                    asdadasdaddasdads ajdasjjdajksdnanad
+                    An authentic Vietnamese culinary experience
                 </p>
             </div>
                 <div className='button-space'>
                     <div className='left-button'>
-                        <button>
+                        <button type='button' onClick={() => {}}>
                             View menu
                         </button>
                     </div>
@@ -25,7 +25,7 @@ const Home = () => {
 
                     </div>
                     <div className='right-button'>
-                        <button>
+                        <button type='button' onClick={() => {}}>
                             Place order
                         </button>
                     </div>
