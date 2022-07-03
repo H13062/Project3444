@@ -1,0 +1,88 @@
+.app__contact{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.app__contact-header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    background-color: black;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../../assets/backgroundpic.jpg");
+    z-index: 3;
+    color:white;
+    padding: 3rem 0;
+}
+
+.app__contact-header h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.app__contact-header p{
+    margin-top: 10px;
+}
+
+.app__contact-content{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0;
+    background-color: rgb(238, 235, 221);
+}
+
+.app__contact-content_work{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 2rem;
+}
+
+.app__contact-content_phonemail{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.app__contact-content_phone, .app__contact-content_mail, .app__contact-content_location, .app__contact-content_hour{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.app__contact-content_phone{
+    margin-bottom: 1rem;
+}
+
+.phone, .mail, .location, .hour{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.phone h2, .mail h2, .location h2, .hour h2{
+ margin-left: 15px;
+ line-height: 10px;
+ font-size: 28px;
+}
+
+.app__contact-content_phone p, .app__contact-content_mail p, .app__contact-content_location p, .app__contact-content_hour p{
+    font-size: 20px;
+    letter-spacing: 0.04rem;
+}
+
+.app__contact-content_icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 42%;
+    font-size: 30px;
+}
