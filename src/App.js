@@ -9,11 +9,11 @@ import {Navbar} from "./component"
 function App() {
   return (
     <>
-      {/* <Navbar/> */}
+       <Navbar/> 
        {/* <Register /> */}
       {/* <AboutUs /> */}
       {/* <Comment /> */}
-      <Home/>
+     {/* <Home/>*/}
 
     </>
   );
