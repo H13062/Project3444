@@ -1,10 +1,12 @@
 import React from 'react'
 import './aboutus.css';
 import {images} from '../../constants';
+import {Navbar} from "../../component"
 
 const AboutUs = () => {
   return (
     <div className='app__aboutus'>
+        <Navbar />
         <div className='app__aboutus-cell'>
             <div className='app__aboutus-header'>
                 <h1>About Us</h1>

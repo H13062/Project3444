@@ -5,11 +5,12 @@ import { BsTelephoneFill } from "react-icons/bs";
 import { IoMdMail } from "react-icons/io";
 import { IoLocationSharp, IoTimeSharp } from 'react-icons/io5';
 import {BsInstagram, BsTwitter, BsFacebook} from 'react-icons/bs'; 
-
+import {Navbar} from "../../component"
 
 const contact = () => {
   return (
     <div className='app__contact'>
+        <Navbar />
         <div className='app__contact-header'>
             <h1>Contact Us</h1>
             <p>Get in touch with us if you have any question</p>
@@ -37,7 +38,7 @@ const contact = () => {
                         <IoLocationSharp style={{fontSize: '25px'}}/>
                         <h2>Location</h2>
                     </div>
-                    <p>123 Sample St, City1, State1, 00000</p>
+                    <p>123 Sample St, City1, State1, 00000</p><br></br>
                     <p>456 Example St, City2, State2, 99999</p>
                 </div>
                 <div className='app__contact-content_hour'>
@@ -45,7 +46,7 @@ const contact = () => {
                         <IoTimeSharp style={{fontSize: '25px'}} />
                         <h2>Working Hour</h2>
                     </div>
-                    <p>Mon - Fri: 9am - 4pm</p>
+                    <p>Mon - Fri: 9am - 4pm</p><br></br>
                     <p>Sat - Sun: 10am - 2pm</p>
                 </div>
             </div>
