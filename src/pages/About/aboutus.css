@@ -1,6 +1,6 @@
 .app__aboutus{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     height: 100%;
     overflow: auto;
 }
