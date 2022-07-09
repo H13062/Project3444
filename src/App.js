@@ -12,10 +12,11 @@ function App() {
 
 
        <Navbar/> 
-       {/* <Register /> */}
-      {/* <AboutUs /> */}
-      {/* <Comment /> */}
-     {/* <Home/>*/}
+       <Home/>
+       <Register />
+      <AboutUs />
+      <Comment />
+     
 
 
     </>

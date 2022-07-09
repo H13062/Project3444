@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css';
+import './register.css';
 import {images} from '../../constants';
 
 const Register = () =>  {
