@@ -1,13 +1,11 @@
 import React from 'react';
 import './register.css';
 import {images} from '../../constants';
-import {Navbar} from "../../component"
 
 const Register = () =>  {
     return(
         <>
             <div className="login-page">
-                <Navbar />
 
                 {/**Header */}
                 <div className="login-header">
