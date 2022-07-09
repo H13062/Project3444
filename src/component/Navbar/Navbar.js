@@ -2,7 +2,7 @@ import React from 'react'
 import {images} from '../../constants';
 import { GiHamburgerMenu } from 'react-icons/gi'; //must import from folder gi in react icons
 import {MdShoppingCart, MdOutlineRestaurantMenu} from 'react-icons/md'; //must import from folder md from react icons
-
+import './Navbar.css'
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
 
@@ -24,10 +24,10 @@ const Navbar = () => {
             <a href ="/login" className ="p__opensans">Login / Register</a>
             <div/>
             <a href ="/order" className ="p__opensans">Order</a>
-            <div/>
+
             <MdShoppingCart />
         </div>
-        <div className = "app__navbar-mobile">
+        <div className = "app__navbar-smallscreen">
             <GiHamburgerMenu color= '#000000' fontSize = {27} onClick= {() => setToggleMenu(true)} />
         </div>
         {toggleMenu && (
