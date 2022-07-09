@@ -1,10 +1,12 @@
 import React from 'react'
 import './comment.css';
 import {images} from '../../constants';
+import {Navbar} from "../../component"
 
 const Comment = () => {
   return (
     <div className='app__comment'>
+        <Navbar />
         <div className='app__comment-header'>
             <h1>Comment</h1>
             <p>Let us know about our experience</p>

@@ -11,15 +11,18 @@
     background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("../../assets/Home-background.jpg");
 }
 .Wrapper{
-    display: block;
+    display: flex;
     /* margin-left: auto;
     margin-right: auto; */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+    flex-direction: column;
+    height: 100%;
     
+}
+.header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 .Logo{
     display: flex;
@@ -40,10 +43,10 @@
 .button-space{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     max-height: 100%;
-    padding: 0 2rem;
-    /* width:  %; */
+    padding: 0 30rem;
+    margin-top: 1rem;
     z-index: 1;
 }
 
@@ -63,6 +66,8 @@
     border-radius: 12px;
     font-family: Times, Times New Roman, serif;
     cursor: pointer;
+    background-color: rgba(232, 225, 173, 1);
+    border: none;
 }
 
 .dash{
