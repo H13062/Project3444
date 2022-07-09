@@ -7,6 +7,7 @@
     align-items: center;
     background-color: rgba(232, 225, 173, 1);
     padding: 1rem 2rem;
+    top: 0%;
     z-index: 10;
 }
 /*NO logo at the moemnt*/
