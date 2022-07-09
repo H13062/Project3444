@@ -24,9 +24,7 @@ const Home = () => {
                                 View menu
                             </button>
                         </div>
-                        <div className='dash'>
-
-                        </div>
+                        <div className='hdash'></div>
                         <div className='right-button'>
                             <button type='button' onClick={() => {}}>
                                 Place order

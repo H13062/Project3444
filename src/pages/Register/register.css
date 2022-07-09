@@ -2,24 +2,27 @@
     display: flex;
     flex-direction: column;  
     background-color: black;
+    height: 100%;
 }
 .login-registration{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 1rem 0;
+
 }
 .login-header{
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
     text-align: center;
+    position: relative;
     height: 100%;
     z-index: 3;
     color:white;
     background-color: black;
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../../assets/backgroundpic.jpg");
-    padding: 2rem 0;
+    /* padding: 2rem 0; */
     
 }
 
@@ -30,7 +33,6 @@
 
 .login-header p{
     margin-top: 10px;
-    margin-bottom: 3rem;
 }
 /* Split the screen in half */
 .split {
@@ -140,7 +142,7 @@
 
 .dash{
     width: 1px;
-    height: 300px;
+    min-height: 300px;
     background-color: white;
 }
 
