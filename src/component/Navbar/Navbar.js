@@ -9,8 +9,10 @@ const Navbar = () => {
   return (
     <nav className = "app__navbar">
         {/*This part adding logo*/}
-        <div className='app__navbar-logo'> 
-          LOGO
+        <div className='app__navbar-logo'>
+          <a href='/'>
+            LOGO
+          </a> 
         </div>
         {/*THis part contains words of navba*/}
         <ul className = "app__navbar-links">
@@ -25,7 +27,7 @@ const Navbar = () => {
             <div/>
             <a href ="/order" className ="p__opensans">Order</a>
 
-            <MdShoppingCart />
+            <MdShoppingCart style={{color: 'black'}} />
         </div>
         <div className = "app__navbar-smallscreen">
             <GiHamburgerMenu color= '#000000' fontSize = {27} onClick= {() => setToggleMenu(true)} />

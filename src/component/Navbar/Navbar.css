@@ -27,7 +27,7 @@
 .app__navbar-links li {
     margin:0 1rem;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .app__navbar-links li:hover {

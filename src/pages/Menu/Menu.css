@@ -1,0 +1,87 @@
+.app__menu{
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    background-color: rgb(238, 235, 221);
+    height: 100%;
+    overflow: auto;
+}
+
+.app__menu-header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3rem 0 0 3rem;
+}
+
+.app__menu-header h1{
+    font-size: 50px;
+    letter-spacing: 0.04rem;
+    margin-bottom: 1rem;
+}
+
+.app__menu-dash{
+    background-color: black;
+    height: 3px;
+    width: 30%;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+.app__menu-img{
+    display: flex;
+    position: relative;
+    height: 100%;
+    align-items: flex-start;
+    padding-top: 2rem;
+}
+
+.app__menu-img_container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    align-items: center;
+    padding: 1rem 3rem; 
+}
+
+.app__menu-img_container:hover{
+    overflow-x: scroll;
+}
+
+.app__menu-img_card{
+    position: relative;
+    max-width: 300px;
+    max-height: 300px;
+    margin-right: 30px;
+}
+
+.app__menu-img_card > div{
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 1rem 0;
+    transition: 0.3s ease;
+}
+
+.app__menu-img_card:hover > div{
+    opacity: 1;
+}
+
+.app__menu-img_card img{
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: cover;
+    transition: 0.3s ease;
+    border-radius: 10px;
+}
