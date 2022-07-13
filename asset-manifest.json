@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/Project3444/static/css/main.ecdbdcc6.css",
-    "main.js": "/Project3444/static/js/main.25bbf863.js",
-    "static/media/Pho.png": "/Project3444/static/media/Pho.f0285314c6cd66ea7dd9.png",
-    "static/media/banhCuon.png": "/Project3444/static/media/banhCuon.3730868c6bea2023a5dd.png",
-    "static/media/backgroundpic.jpg": "/Project3444/static/media/backgroundpic.17e4ad080892b45bc639.jpg",
-    "static/media/springRoll.jpg": "/Project3444/static/media/springRoll.e3db47ac75789413842b.jpg",
-    "static/media/bunbo.jpg": "/Project3444/static/media/bunbo.1ae1132a10d03a357b65.jpg",
-    "static/media/Home-background.jpg": "/Project3444/static/media/Home-background.f839995e44758bb5a64d.jpg",
-    "static/media/comTam.jpg": "/Project3444/static/media/comTam.9d3effcb4c8bc34657bc.jpg",
-    "static/media/banhMi.jpg": "/Project3444/static/media/banhMi.7391b91a87ee56891934.jpg",
-    "static/media/thitkho.jpg": "/Project3444/static/media/thitkho.863228855e47540de86f.jpg",
-    "static/media/Thaitea.jpg": "/Project3444/static/media/Thaitea.0c3db7ffdb6f2faebec3.jpg",
-    "static/media/hotpot.jpg": "/Project3444/static/media/hotpot.1fc774b44a17fc9f68c3.jpg",
-    "static/media/lycheetea.jpg": "/Project3444/static/media/lycheetea.8e1cd36fc0135cb17564.jpg",
-    "static/media/history.jpg": "/Project3444/static/media/history.980e121d6e74b5bd02ef.jpg",
-    "index.html": "/Project3444/index.html",
-    "main.ecdbdcc6.css.map": "/Project3444/static/css/main.ecdbdcc6.css.map",
-    "main.25bbf863.js.map": "/Project3444/static/js/main.25bbf863.js.map"
+    "main.css": "/static/css/main.65a25ad7.css",
+    "main.js": "/static/js/main.29591e28.js",
+    "static/media/Pho.png": "/static/media/Pho.f0285314c6cd66ea7dd9.png",
+    "static/media/banhCuon.png": "/static/media/banhCuon.3730868c6bea2023a5dd.png",
+    "static/media/backgroundpic.jpg": "/static/media/backgroundpic.17e4ad080892b45bc639.jpg",
+    "static/media/springRoll.jpg": "/static/media/springRoll.e3db47ac75789413842b.jpg",
+    "static/media/bunbo.jpg": "/static/media/bunbo.1ae1132a10d03a357b65.jpg",
+    "static/media/Home-background.jpg": "/static/media/Home-background.f839995e44758bb5a64d.jpg",
+    "static/media/comTam.jpg": "/static/media/comTam.9d3effcb4c8bc34657bc.jpg",
+    "static/media/banhMi.jpg": "/static/media/banhMi.7391b91a87ee56891934.jpg",
+    "static/media/thitkho.jpg": "/static/media/thitkho.863228855e47540de86f.jpg",
+    "static/media/Thaitea.jpg": "/static/media/Thaitea.0c3db7ffdb6f2faebec3.jpg",
+    "static/media/hotpot.jpg": "/static/media/hotpot.1fc774b44a17fc9f68c3.jpg",
+    "static/media/lycheetea.jpg": "/static/media/lycheetea.8e1cd36fc0135cb17564.jpg",
+    "static/media/history.jpg": "/static/media/history.980e121d6e74b5bd02ef.jpg",
+    "index.html": "/index.html",
+    "main.65a25ad7.css.map": "/static/css/main.65a25ad7.css.map",
+    "main.29591e28.js.map": "/static/js/main.29591e28.js.map"
   },
   "entrypoints": [
-    "static/css/main.ecdbdcc6.css",
-    "static/js/main.25bbf863.js"
+    "static/css/main.65a25ad7.css",
+    "static/js/main.29591e28.js"
   ]
 }
