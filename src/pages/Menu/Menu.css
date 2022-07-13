@@ -48,13 +48,16 @@
 
 .app__menu-img_container:hover{
     overflow-x: scroll;
+    scroll-snap-type: x mandatory;
 }
 
 .app__menu-img_card{
     position: relative;
     max-width: 300px;
     max-height: 300px;
-    margin-right: 30px;
+    margin-right: 3rem;
+    scroll-snap-align: start;
+    scroll-margin: 0 3rem;
 }
 
 .app__menu-img_card > div{
