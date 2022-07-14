@@ -33,6 +33,7 @@ const contact = () => {
                         <p>example@email.com</p>
                     </div>
                 </div>
+                <div className='dash'/>
                 <div className='app__contact-content_location'>
                     <div className='location'>
                         <IoLocationSharp style={{fontSize: '25px'}}/>
@@ -41,6 +42,7 @@ const contact = () => {
                     <p>123 Sample St, City1, State1, 00000</p><br></br>
                     <p>456 Example St, City2, State2, 99999</p>
                 </div>
+                <div className='dash'/>
                 <div className='app__contact-content_hour'>
                     <div className='hour'>
                         <IoTimeSharp style={{fontSize: '25px'}} />
@@ -51,9 +53,9 @@ const contact = () => {
                 </div>
             </div>
             <div className='app__contact-content_icons'>
-                <BsInstagram />
-                <BsTwitter />
-                <BsFacebook />
+                <div><BsInstagram /></div>
+                <div><BsTwitter /></div>
+                <div><BsFacebook /></div>
             </div>
         </div>
     </div>

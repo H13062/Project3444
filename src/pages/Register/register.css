@@ -1,7 +1,7 @@
 .login-page{
     display: flex;
     flex-direction: column;  
-    background-color: black;
+    background-color: rgb(238, 235, 221);
     height: 100%;
 }
 .login-registration{
@@ -29,6 +29,7 @@
 .login-header h1{
     font-size: 50px;
     margin-bottom: 0;
+    letter-spacing: 0.04rem;
 }
 
 .login-header p{
@@ -45,14 +46,8 @@
     z-index: 1;
   }
   
-  /* Control the left side */
-  .left {
-    background-color: black;
-  }
-  
-  /* Control the right side */
-  .right {
-    background-color: black;
+  .left, .right {
+    background-color: rgb(238, 235, 221);
   }
   
  /* If you want the content centered horizontally and vertically */
@@ -118,7 +113,7 @@
 .header h2{
     text-align: center;
     font-size: 200%;
-    color:white;
+    color:black;
     letter-spacing: 0.04rem;
     margin: 1px;  
 }
@@ -134,16 +129,17 @@
 
 .form-body input{
     width: 100%;
-    background-color: rgba(0,0,0,0.5);
-    border: 1px solid white;
-    padding: 10px;
+    background-color: rgb(238, 235, 221);
+    border: 1px solid black;
+    padding: 12px;
     font-size: x-small;
+    border-radius: 10px;
 }
 
 .dash{
-    width: 1px;
+    width: 2px;
     min-height: 300px;
-    background-color: white;
+    background-color: black;
 }
 
 .btn{

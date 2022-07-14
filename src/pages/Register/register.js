@@ -30,11 +30,11 @@ const Register = () =>  {
                                 <div className="form-body">
                                     <div className="username">
                                        
-                                        <input className="form__input" type="text" id="username" placeholder="Username"/>
+                                        <input className="form__input" type="text" id="username" required placeholder="Username"/>
                                     </div>
                                         <div className="email">
                                             
-                                            <input  type="email" id="email" className="form__input" placeholder="Email"/>
+                                            <input  type="email" id="email" className="form__input" required placeholder="Email"/>
                                         </div>
                                     </div>
 
@@ -56,19 +56,19 @@ const Register = () =>  {
                                 <div className="form-body">
                                     <div className="username">
                                         
-                                        <input className="form__input" type="text" id="username" placeholder="Username"/>
+                                        <input className="form__input" type="text" id="username" required placeholder="Username"/>
                                     </div>
                                     <div className="email">
                                         
-                                        <input  type="email" id="email" className="form__input" placeholder="Email"/>
+                                        <input  type="email" id="email" className="form__input" required placeholder="Email"/>
                                     </div>
                                     <div className="password">
                                         
-                                        <input className="form__input" type="password"  id="password" placeholder="Password"/>
+                                        <input className="form__input" type="password"  id="password" required placeholder="Password"/>
                                     </div>
                                     <div className="confirm-password">
                                        
-                                        <input className="form__input" type="password" id="confirmPassword" placeholder="Confirm Password"/>
+                                        <input className="form__input" type="password" id="confirmPassword" required placeholder="Confirm Password"/>
                                     </div>
                                 </div>
                                 <div class="footer">

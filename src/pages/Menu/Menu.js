@@ -5,7 +5,7 @@ import {Navbar} from "../../component"
 
 const Menu = () => {
     
-    const imageList = [images.pho, images.hotpot, images.tk, images.ct, images.bb, images.bm, images.bc, images.roll];
+    const imageList = [images.pho, images.tk, images.bb, images.bm, images.bc, images.roll, images.hotpot, images.ct];
     const dataList = {data};
     return (
     <>
