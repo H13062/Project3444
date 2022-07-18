@@ -2923,11 +2923,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CSCE3444\\project3444WebAPI\\project3444WebAPI.csproj",
+      "projectUniqueName": "D:\\ko\\project3444\\project3444WebAPI\\project3444WebAPI.csproj",
       "projectName": "project3444WebAPI",
-      "projectPath": "D:\\CSCE3444\\project3444WebAPI\\project3444WebAPI.csproj",
+      "projectPath": "D:\\ko\\project3444\\project3444WebAPI\\project3444WebAPI.csproj",
       "packagesPath": "C:\\Users\\bgh15\\.nuget\\packages\\",
-      "outputPath": "D:\\CSCE3444\\project3444WebAPI\\obj\\",
+      "outputPath": "D:\\ko\\project3444\\project3444WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2948,8 +2948,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\CSCE3444\\project3444.Infrastructure\\project3444.Infrastructure.csproj": {
-              "projectPath": "D:\\CSCE3444\\project3444.Infrastructure\\project3444.Infrastructure.csproj"
+            "D:\\ko\\project3444\\project3444.Infrastructure\\project3444.Infrastructure.csproj": {
+              "projectPath": "D:\\ko\\project3444\\project3444.Infrastructure\\project3444.Infrastructure.csproj"
             }
           }
         }
