@@ -14,6 +14,7 @@ namespace project3444.Core.Entity
         [Required]
         public DateTime DateTime { get; set; }
         [Required, Column(TypeName = "varchar")]
+        [MaxLength(200)]
         public string Description { get; set; }
     }
 }
