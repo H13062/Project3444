@@ -1,5 +1,6 @@
 import React from 'react'
 import {images} from '../../constants';
+import { Link } from 'react-router-dom'
 import { GiHamburgerMenu } from 'react-icons/gi'; //must import from folder gi in react icons
 import {MdShoppingCart, MdOutlineRestaurantMenu} from 'react-icons/md'; //must import from folder md from react icons
 import './Navbar.css'
@@ -16,11 +17,11 @@ const Navbar = () => {
         </div>
         {/*THis part contains words of navba*/}
         <ul className = "app__navbar-links">
-            <li className = "p__opensans"><a href ="/home">Home</a></li>
-            <li className = "p__opensans"><a href ="/about">About</a></li>
-            <li className = "p__opensans"><a href ="/menu">Menu</a></li>
-            <li className = "p__opensans"><a href ="/contacts">Contacts</a></li>
-            <li className = "p__opensans"><a href ="/comment">Comment</a></li>
+            <li className = "p__opensans"><Link to ="/home">Home</Link></li>
+            <li className = "p__opensans"><Link to ="/about">About</Link></li>
+            <li className = "p__opensans"><Link to ="/menu">Menu</Link></li>
+            <li className = "p__opensans"><Link to ="/contacts">Contacts</Link></li>
+            <li className = "p__opensans"><Link to ="/comment">Comment</Link></li>
         </ul>
         <div className = 'app__navbar-access'>
             <a href ="/login" className ="p__opensans">Login / Register</a>
@@ -36,12 +37,12 @@ const Navbar = () => {
                 <div className='app__navbar-smallscreen_overlay '>
                       <MdOutlineRestaurantMenu fontSize={27} className ="overlay__close" onClick={() => setToggleMenu(false)}/>
                       <ul className = "app__navbar-smallscreen-links">
-                        <li className = "p__opensans"><a href ="/home">Home</a></li>
-                        <li className = "p__opensans"><a href ="/about">About</a></li>
-                        <li className = "p__opensans"><a href ="/menu">Menu</a></li>
-                        <li className = "p__opensans"><a href ="/contacts">Contacts</a></li>
-                        <li className = "p__opensans"><a href ="/comment">Comment</a></li>
-                        <li className = "p__opensans"><a href ="/login">Login/Register</a></li>
+                        <li className = "p__opensans"><Link to ="/home">Home</Link></li>
+                        <li className = "p__opensans"><Link to ="/about">About</Link></li>
+                        <li className = "p__opensans"><Link to ="/menu">Menu</Link></li>
+                        <li className = "p__opensans"><Link to ="/contacts">Contacts</Link></li>
+                        <li className = "p__opensans"><Link to ="/comment">Comment</Link></li>
+                        <li className = "p__opensans"><Link to ="/login">Login/Register</Link></li>
                       </ul>
                 </div>
               )
