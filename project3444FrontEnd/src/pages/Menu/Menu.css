@@ -9,15 +9,26 @@
 
 .app__menu-header{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     padding: 3rem 0 0 3rem;
+    max-width: 100%;
 }
 
 .app__menu-header h1{
     font-size: 50px;
     letter-spacing: 0.04rem;
     margin-bottom: 1rem;
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.header-button{
+    margin-right: 3rem;
 }
 
 .app__menu-dash{
@@ -60,6 +71,10 @@
     scroll-margin: 0 3rem;
     box-shadow: 0px 2px 4px 0 rgba(63, 55, 7, 0.5);
     border-radius: 10px;
+}
+
+.card-click{
+    outline: 10px solid rgb(208, 187, 150);
 }
 
 .app__menu-img_card > div{

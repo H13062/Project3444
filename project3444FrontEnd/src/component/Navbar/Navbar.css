@@ -54,6 +54,7 @@
 .app__navbar-access div {
     width: 2px;
     height: 36px;
+    margin-right: 1rem;
     background-color: black;
 }
 

@@ -26,8 +26,6 @@ const Navbar = () => {
         <div className = 'app__navbar-access'>
             <a href ="/login" className ="p__opensans">Login / Register</a>
             <div/>
-            <a href ="/order" className ="p__opensans">Order</a>
-
             <MdShoppingCart style={{color: 'black'}} />
         </div>
         <div className = "app__navbar-smallscreen">
