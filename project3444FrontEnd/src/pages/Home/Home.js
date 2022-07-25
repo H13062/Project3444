@@ -1,6 +1,7 @@
 import React from 'react'
 import './Home.css'
 import {Navbar} from "../../component"
+import { Link } from 'react-router-dom'
 
 class Home extends React.Component {
     render(){
@@ -23,15 +24,17 @@ class Home extends React.Component {
                           <div className='button-space'>
                               <div className='left-button'>
                                   <button type='button' onClick={() => {}}>
+                                    <Link to ="/menu">
                                       View menu
+                                    </Link>
                                   </button>
                               </div>
-                              <div className='hdash'></div>
+                              {/* <div className='hdash'></div>
                               <div className='right-button'>
                                   <button type='button' onClick={() => {}}>
                                       Place order
                                   </button>
-                              </div>
+                              </div> */}
                       </div>
                   </div>
                   

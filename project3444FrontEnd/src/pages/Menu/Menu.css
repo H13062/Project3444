@@ -27,8 +27,40 @@
     flex-direction: column;
 }
 
+.header-p p{
+    letter-spacing: 0.04rem;
+}
+
 .header-button{
     margin-right: 3rem;
+}
+
+.header-button button{
+    font-size: 25px;
+    letter-spacing: 0.04rem;
+    height: 5rem;
+    width: 16.5rem;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: rgb(208, 187, 150);
+    border: none;
+    transition: 0.2s ease;
+}
+
+.header-button button:disabled, .header-button button[disabled]{
+    opacity: 0.6;
+    width: 14rem;
+    height: 4rem;
+    font-size: 20px;
+    pointer-events: none;
+}
+
+.header-button button:hover{
+    outline: 4px solid rgb(148, 131, 101);
+}
+
+.header-button button:disabled:hover, .header-button button[disabled]:hover{
+    outline: none;
 }
 
 .app__menu-dash{
@@ -98,10 +130,23 @@
     opacity: 1;
 }
 
+.app__menu-img_card:active{
+    outline: 10px solid rgb(208, 187, 150);
+}
+
 .app__menu-img_card img{
     max-width: 300px;
     max-height: 300px;
     object-fit: cover;
     transition: 0.3s ease;
     border-radius: 10px;
+}
+
+#clicked{
+    display: none;
+    position: absolute;
+}
+
+#clicked:checked + label > div{
+    outline: 10px solid rgb(208, 187, 150); 
 }

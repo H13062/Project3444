@@ -21,6 +21,7 @@
 .app__aboutus-header h1{
     font-size: 50px;
     text-transform: uppercase;
+    letter-spacing: 0.04rem;
 }
 
 .app__aboutus-content{
