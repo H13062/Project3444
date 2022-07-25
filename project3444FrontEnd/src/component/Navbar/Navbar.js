@@ -15,7 +15,6 @@ const Navbar = () => {
             LOGO
           </Link> 
         </div>
-        {/*THis part contains words of navba*/}
         <ul className = "app__navbar-links">
             <li className = "p__opensans"><Link to ="/home">Home</Link></li>
             <li className = "p__opensans"><Link to ="/about">About</Link></li>
@@ -23,11 +22,11 @@ const Navbar = () => {
             <li className = "p__opensans"><Link to ="/contacts">Contacts</Link></li>
             <li className = "p__opensans"><Link to ="/comment">Comment</Link></li>
         </ul>
-        <div className = 'app__navbar-access'>
-            <a href ="/login" className ="p__opensans">Login / Register</a>
+        <ul className = 'app__navbar-access'>
+            <li className ="p__opensans"><Link to ="/login">Login / Register</Link></li>
             <div/>
             <MdShoppingCart style={{color: 'black'}} />
-        </div>
+        </ul>
         <div className = "app__navbar-smallscreen">
             <GiHamburgerMenu color= '#000000' fontSize = {27} onClick= {() => setToggleMenu(true)} />
         </div>
