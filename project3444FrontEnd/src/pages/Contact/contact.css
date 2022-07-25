@@ -64,6 +64,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 1rem;
 }
 
 .app__contact-content_phone{
@@ -80,16 +81,24 @@
 }
 
 .phone h2, .mail h2, .location h2, .hour h2{
- margin-left: 15px;
- line-height: 10px;
- font-size: 28px;
+    letter-spacing: 0.04rem;
+    margin-left: 15px;
+    line-height: 10px;
+    font-size: 28px;
 }
 
-.app__contact-content_phone p, .app__contact-content_mail p, .app__contact-content_location p, .app__contact-content_hour p{
+.app__contact-content_phone p, .app__contact-content_mail p, .location-p p, .hour-p p{
     font-size: 20px;
     letter-spacing: 0.04rem;
 }
-
+.location-p{
+    display: flex;
+    flex-direction: column;
+}
+.hour-p{
+    display: flex;
+    flex-direction: column;
+}
 .app__contact-content_icons{
     display: flex;
     flex-direction: row;
@@ -114,4 +123,59 @@
     width: 2px;
     min-height: 65%;
     background-color: black;
+}
+@media screen and (max-width: 1050px){
+    .app__contact-header{
+        padding: 2.5rem 0;
+    }
+    .app__contact-content{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        justify-content: center;
+    }
+    .app__contact-content_work{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 2rem;
+    }
+    .app__contact-content_phonemail{
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 6rem;
+    }
+    .app__contact-content_location{
+        margin-bottom: 2rem;
+    }
+    .phone, .mail, .location, .hour{
+        margin-bottom: 1rem;
+    }
+    .phone h2, .mail h2, .location h2, .hour h2{
+        font-size: 22px;
+    }
+    .location-p{
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 2rem;
+        padding: 0 2rem;
+    }
+    .hour-p{
+        flex-direction: row;
+        gap: 3rem;
+    }
+    .app__contact-content_phone p, .app__contact-content_mail p, .location-p p, .hour-p p{
+        font-size: 18px;
+        letter-spacing: 0.04rem;
+    }
+    .dash{
+        /* margin-top: 0;
+        margin-bottom: 1rem;
+        width: 40%;
+        min-height: 2px; */
+        display: none;
+    }
+    .app__contact-content_icons{
+        padding: 0 38%;
+    }
 }

@@ -27,7 +27,7 @@
 .app__navbar-links li {
     margin:0 1rem;
     cursor: pointer;
-    font-size: 20px;
+    /* font-size: 20px; */
 }
 
 .app__navbar-links li:hover {
@@ -45,6 +45,7 @@
     margin: 0 1rem;
     text-decoration: none;
     transition: 0.5s ease;
+    /* font-size: 20px; */
 }
 
 .app__navbar-access a :hover {
@@ -79,7 +80,7 @@
     font-size: 27px;
     color: white;
     cursor: pointer;
-
+    
     position: absolute;
     top: 20px;
     right: 20px;
@@ -91,7 +92,6 @@
 .app__navbar-smallscreen-links {
     list-style: none;
     /*Remove all list style for list*/
-
 }
 
 .app__navbar-smallscreen-links li{
@@ -108,11 +108,22 @@
 }
 
 /*3 dash appear here*/
-@media screen and (max-width: 1150px){
+@media screen and (max-width: 900px){
+    .app__navbar-logo{
+        font-size: 35px;
+    }
+    .app__navbar-links li{
+        margin:0 0.5rem;
+    }
+}
+@media screen and (max-width: 800px){
     .app__navbar-links{
         display: none;
     }
+    .app__navbar-access{
+        display: none;
+    }
     .app__navbar-smallscreen{
-        display:flex;
+        display: flex;
     }
 }

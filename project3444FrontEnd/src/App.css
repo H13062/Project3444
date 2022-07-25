@@ -3,6 +3,7 @@ html, body{
   min-width: 100%;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 #root{
@@ -90,4 +91,23 @@ html, body{
   border-width: 0 3rem;
   background-color: rgb(173, 169, 136);    /* color of the scroll thumb */
   /* border: 1px solid #000066;  */
+}
+
+@media screen and (max-width: 750px){
+    /* Scroll bar setting */
+  *::-webkit-scrollbar {
+    width: 0;
+    display: none;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: rgb(238, 235, 221);        /* color of the tracking area */
+  }
+
+  *::-webkit-scrollbar-thumb {
+    border: solid rgb(238, 235, 221);
+    border-width: 0 2rem;
+    background-color: rgb(173, 169, 136);    /* color of the scroll thumb */
+    /* border: 1px solid #000066;  */
+  }
 }

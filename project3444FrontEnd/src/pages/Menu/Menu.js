@@ -1,6 +1,6 @@
 import React from 'react'
 import './Menu.css'
-import {images, data} from '../../constants';
+import {images} from '../../constants';
 import {Navbar} from "../../component"
 import { Link } from 'react-router-dom'
 
@@ -45,7 +45,6 @@ class Menu extends React.Component {
 
     render(){
         const imageList = this.state.imglist;
-        const dataList = {data};
         return (
             <>
                 <div className='app__menu'>
