@@ -10,15 +10,13 @@ import { BrowserRouter } from 'react-router-dom'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-<<<<<<< HEAD
+
     {/* <BrowserRouter> */}
-      <App />
     {/* </BrowserRouter> */}
-=======
+
     
       <App />
-    
->>>>>>> c140e5d2f968282168af6e06b2464026a89d7834
+  
   </React.StrictMode>,
   
 );
