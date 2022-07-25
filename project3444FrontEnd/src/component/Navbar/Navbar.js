@@ -11,9 +11,9 @@ const Navbar = () => {
     <nav className = "app__navbar">
         {/*This part adding logo*/}
         <div className='app__navbar-logo'>
-          <a href='/'>
+        <Link to ="/home">
             LOGO
-          </a> 
+          </Link> 
         </div>
         {/*THis part contains words of navba*/}
         <ul className = "app__navbar-links">

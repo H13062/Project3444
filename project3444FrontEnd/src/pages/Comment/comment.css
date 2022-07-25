@@ -21,10 +21,12 @@
     font-size: 50px;
     text-transform: uppercase;
     margin-bottom: 0;
+    letter-spacing: 0.04rem;
 }
 
 .app__comment-header p{
     margin-top: 10px;
+    letter-spacing: 0.04rem;
 }
 
 .app__comment-field{
