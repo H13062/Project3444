@@ -4,6 +4,7 @@ import './App.css';
 import { Register, AboutUs, Comment, Home, Menu, Contact } from "./pages"
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
+
 function App() {
   return (
     <>
@@ -19,11 +20,6 @@ function App() {
 
         </Routes>
       </Router>
-      {/* <Register /> */}
-      {/* <AboutUs /> */}
-      {/* <Comment /> */}
-      {/* <Contact /> */}
-      {/* <Home/> */}
     </>
   );
 }
