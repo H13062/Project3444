@@ -9,8 +9,10 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    height: 100%;
-    background-color: black;
+    justify-content: flex-start;
+    align-items: center;
+    height: fit-content;
+    /* background-color: black; */
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../../assets/backgroundpic.jpg");
     z-index: 3;
     color:white;
@@ -20,7 +22,7 @@
 .app__comment-header h1{
     font-size: 50px;
     text-transform: uppercase;
-    margin-bottom: 0;
+
     letter-spacing: 0.04rem;
 }
 
@@ -32,7 +34,7 @@
 .app__comment-field{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     height: 100%;
     background-color: rgb(238, 235, 221);
     padding: 3rem;
@@ -78,4 +80,23 @@
     width: 2px;
     height: 300px;
     background-color: black;
+}
+
+@media screen and (max-width: 900px) {
+    .app__comment-header{
+        padding: 2rem 0;
+    }
+    .app__comment-field{
+        flex-direction: column;
+    }
+    .app__comment-field_input{
+        width: 100%;
+        padding: 0;
+    }
+    .app__comment-field_input textarea{
+        margin-bottom: 1rem;
+    }
+    .comment-dash{
+        display: none;
+    }
 }
