@@ -20,7 +20,7 @@ class contact extends React.Component {
                       <div className='app__contact-content_phonemail'>
                           <div className='app__contact-content_phone'>
                               <div className='phone'>
-                                  <BsTelephoneFill style={{fontSize: '25px'}}/>
+                                  <BsTelephoneFill style={{fontSize: '20px'}}/>
                                   <h2>Phone Number</h2>
                               </div>
                               <p>+1 (123)-456-7890</p>
