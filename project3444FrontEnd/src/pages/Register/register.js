@@ -56,6 +56,10 @@ class Register extends React.Component  {
                                         <h2>Register</h2>
                                     </div>
                                     <div className="form-body">
+                                        <div className="name">   
+                                        
+                                            <input className="form__input" type="text" id="name" required placeholder="Full Name"/>
+                                        </div>
                                         <div className="username">
                                             
                                             <input className="form__input" type="text" id="username" required placeholder="Username"/>
