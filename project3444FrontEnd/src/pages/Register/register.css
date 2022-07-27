@@ -119,7 +119,7 @@
 }
 
 /* Login*/
-.username, .email, .password, .confirm-password{
+.name, .username, .email, .password, .confirm-password{
     display: flex;
     justify-content: center;
     width: 100%;
