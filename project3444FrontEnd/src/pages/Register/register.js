@@ -47,6 +47,7 @@ const Register = () =>  {
                                     </div>
                                 </div> 
                             </div>
+                        </div>
                     </div>
                     {/* End left */}
                     <div className='dash'></div>
