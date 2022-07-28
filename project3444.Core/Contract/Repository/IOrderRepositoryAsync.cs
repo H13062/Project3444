@@ -9,5 +9,6 @@ namespace project3444.Core.Contract.Repository
 {
     public interface IOrderRepositoryAsync:IRepositoryAsync<Order>
     {
+
     }
 }

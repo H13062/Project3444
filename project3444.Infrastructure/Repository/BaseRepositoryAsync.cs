@@ -1,4 +1,6 @@
-﻿using project3444.Core.Contract.Repository;
+﻿using Microsoft.EntityFrameworkCore;
+using project3444.Core.Contract.Repository;
+using project3444.Infrastructure.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,29 +11,38 @@ namespace project3444.Infrastructure.Repository
 {
     public class BaseRepositoryAsync<T> : IRepositoryAsync<T> where T : class
     {
-        public Task<int> DeleteAsync(int id)
+        private readonly ProjectDbContext db;
+        public BaseRepositoryAsync(ProjectDbContext _db)
         {
-            throw new NotImplementedException();
+            db = _db;
+        }
+        public async Task<int> DeleteAsync(int id)
+        {
+            var result = await db.Set<T>().FindAsync(id);
+            db.Set<T>().Remove(result);
+            return await db.SaveChangesAsync();
         }
 
-        public Task<IEnumerable<T>> GetAllAsync()
+        public async Task<IEnumerable<T>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            return await db.Set<T>().ToListAsync();
         }
 
-        public Task<T> GetByIdAsync(int id)
+        public async Task<T> GetByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            return await db.Set<T>().FindAsync(id);
         }
 
-        public Task<int> InsertAsync(T entity)
+        public async Task<int> InsertAsync(T entity)
         {
-            throw new NotImplementedException();
+            await db.Set<T>().AddAsync(entity);
+            return await db.SaveChangesAsync();
         }
 
-        public Task<int> UpdateAsync(T entity)
+        public async Task<int> UpdateAsync(T entity)
         {
-            throw new NotImplementedException();
+            db.Entry(entity).State = EntityState.Modified;
+            return await db.SaveChangesAsync();
         }
     }
 }
