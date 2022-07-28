@@ -7,9 +7,8 @@ import { Link } from 'react-router-dom'
 class Menu extends React.Component {
     constructor(prop){
         super(prop);
-        let imgSelectedTemp = {}
         const imglist = [images.pho, images.tk, images.bb, images.bm, images.bc, images.roll, images.hotpot, images.ct]
-
+        let imgSelectedTemp = {}
         for (let index = 0; index < imglist.length; index++) {
             imgSelectedTemp['image_' + index] = false;
         }
@@ -70,7 +69,7 @@ class Menu extends React.Component {
                     </div>
                     <div className='app__menu-dash'></div>
                     <div className='app__menu-img'>
-                        <div className='app__menu-img_container' ref='imgContainer'>
+                        <div className='app__menu-img_container'>
                             {imageList.map((image, index) => (
                                 <div className='app__menu-img_card' 
                                 onClick={this.handleClicked.bind(this)} 
