@@ -27,10 +27,15 @@ const Register = () =>  {
                                     <h2>Login</h2>
                                 </div>
                                 <div className="form-body">
-                                    <div className="username">
+                                    <div className="form-body">
+                                        <div className="name">   
                                         
-                                        <input className="form__input" type="text" id="username" required placeholder="Username"/>
-                                    </div>
+                                            <input className="form__input" type="text" id="name" required placeholder="Full Name"/>
+                                        </div>
+                                        <div className="username">
+                                            
+                                            <input className="form__input" type="text" id="username" required placeholder="Username"/>
+                                        </div>
                                         <div className="email">
                                             
                                             <input  type="email" id="email" className="form__input" required placeholder="Email"/>

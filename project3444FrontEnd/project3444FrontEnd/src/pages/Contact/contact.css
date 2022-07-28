@@ -1,0 +1,278 @@
+.app__contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+.app__contact-header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    flex: 1;
+    height: 100%;
+    background-color: black;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../../assets/backgroundpic.jpg");
+    z-index: 3;
+    padding: 4rem 0;
+    color:white;    
+}
+
+.app__contact-header h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    letter-spacing: 0.04rem;
+}
+
+.app__contact-header p{
+    margin-top: 10px;
+    letter-spacing: 0.04rem;
+}
+
+.app__contact-content{
+    flex: 8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: space-between;
+    height: 100%;
+    overflow-y: hidden;
+    padding: 4rem 0;
+    background-color: rgb(238, 235, 221);
+}
+
+.app__contact-content_work{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 1rem 0;
+}
+
+.app__contact-content_phonemail{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.app__contact-content_phone, .app__contact-content_mail, .app__contact-content_location, .app__contact-content_hour{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.app__contact-content_phone{
+    margin-bottom: 2rem;
+}
+
+.phone, .mail, .location, .hour{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-bottom: 2rem;
+}
+
+.phone h2, .mail h2, .location h2, .hour h2{
+    letter-spacing: 0.04rem;
+    margin-left: 15px;
+    /* line-height: 10px; */
+    font-size: 28px;
+}
+
+.app__contact-content_phone p, .app__contact-content_mail p, .location-p p, .hour-p p{
+    font-size: 20px;
+    letter-spacing: 0.04rem;
+}
+.location-p{
+    display: flex;
+    flex-direction: column;
+}
+.hour-p{
+    display: flex;
+    flex-direction: column;
+}
+.app__contact-content_icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 42%;
+    line-height: 65px;
+}
+
+.app__contact-content_icons > div{
+    font-size: 30px;
+    transition: 0.2s ease;
+}
+
+.app__contact-content_icons > div:hover{
+    cursor: pointer;
+    font-size: 45px;
+}
+
+.dash{
+    margin-top: 2rem;
+    width: 2px;
+    min-height: 65%;
+    background-color: black;
+}
+@media screen and (min-width: 1600px){
+    .app__contact-header{
+        padding: 2.5rem 0;
+    }
+    .app__contact-content{
+        justify-content: space-evenly;
+    }
+    .phone h2, .mail h2, .location h2, .hour h2{
+        font-size: 40px;
+    }
+    .app__contact-content_phone p, .app__contact-content_mail p, .location-p p, .hour-p p{
+        font-size: 30px;
+    }
+    .app__contact-content_icons > div{
+        font-size: 40px;
+    }
+    .app__contact-content_icons > div:hover{
+        font-size: 55px;
+    }
+    
+}
+@media screen and (max-width: 1050px){
+    .app__contact-header{
+        padding: 2.5rem 0;
+    }
+    .app__contact-content{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .app__contact-content_work{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 2rem;
+    }
+    .app__contact-content_phonemail{
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 6rem;
+    }
+    .app__contact-content_location{
+        margin-bottom: 2rem;
+    }
+    .phone, .mail, .location, .hour{
+        margin-bottom: 1rem;
+    }
+    .phone h2, .mail h2, .location h2, .hour h2{
+        font-size: 22px;
+    }
+    .location-p, .hour-p{
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 2rem;
+        padding: 0 2rem;
+    }
+    .hour-p{
+        flex-direction: row;
+        gap: 3rem;
+    }
+    .app__contact-content_phone p, .app__contact-content_mail p, .location-p p, .hour-p p{
+        font-size: 18px;
+        letter-spacing: 0.04rem;
+    }
+    .dash{
+        display: none;
+    }
+    .app__contact-content_icons{
+        padding: 0 38%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .app__contact-header{
+        padding: 1rem 0;
+    }
+    .app__contact-content_work{
+        align-items: flex-start;
+        padding: 0 4rem;
+    }
+    .app__contact-content_phonemail{
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+    }
+    .app__contact-content_phone, .app__contact-content_mail{
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+    .app__contact-content_location, .app__contact-content_hour{
+        width: 100%;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+        justify-content: space-between;
+    }
+    .phone, .mail, .location, .hour{
+        align-items: center;
+        margin-bottom: 0;
+        justify-content: space-between;
+    }
+    .location-p, .hour-p{
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 0;
+        gap: 1rem;
+    }
+    .phone h2, .mail h2, .location h2, .hour h2{
+        margin-left: 6px;
+        font-size: 20px;
+        letter-spacing: 0;
+    }
+    .app__contact-content_phone p, .app__contact-content_mail p, .location-p p, .hour-p p{
+        font-size: 16px;
+        text-align: end;
+    }
+    .location-p br, .hour-p br{
+        display: none;
+    }
+    .dash{
+        display: none;
+    }
+    .app__contact-content_icons{
+        margin-top: 1rem;
+        gap: 2rem;
+    }
+}
+@media screen and (max-width: 650px){
+    .app__contact-content_work{
+        padding: 0 1rem;
+    }
+}
+@media screen and (max-width: 400px){
+    .phone h2, .mail h2, .location h2, .hour h2{
+        font-size: 18px;
+    }
+    .app__contact-content_phone p, .app__contact-content_mail p, .location-p p, .hour-p p{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 300px){
+    .phone h2, .mail h2, .location h2, .hour h2{
+        font-size: 14px;
+    }
+    .app__contact-content_phone p, .app__contact-content_mail p, .location-p p, .hour-p p{
+        font-size: 10px;
+    }
+}
