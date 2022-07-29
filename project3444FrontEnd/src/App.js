@@ -1,13 +1,13 @@
-import React from 'react';
-import './App.css';
-
-import { Register, AboutUs, Comment, Home, Menu, Contact } from "./pages"
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import React from "react";
+import "./App.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
+import { Register, AboutUs, Comment, Home, Menu, Contact } from "./pages";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <Router >
+      <Router>
         <Routes>
           <Route path="/project3444" element={<Home/>}/>
           <Route path="/home" element={<Home/>}/>
@@ -16,7 +16,6 @@ function App() {
           <Route path="/contacts" element={<Contact />}/>
           <Route path="/comment" element={<Comment />}/>
           <Route path="/menu" element={<Menu />}/>
-
         </Routes>
       </Router>
       {/* <Register /> */}

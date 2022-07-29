@@ -1,5 +1,6 @@
 ﻿using project3444.Core.Contract.Repository;
 using project3444.Core.Contract.Service;
+using project3444.Core.Entity;
 using project3444.Core.Model;
 using System;
 using System.Collections.Generic;
@@ -19,14 +20,20 @@ namespace project3444.Infrastructure.Service
             this.commentRepositoryAsync = commentRepositoryAsync;
         }
 
-        public Task<int> AddUserAsync(UserRequestModel userRequest)
+        public async Task<int> AddUserAsync(UserRequestModel userRequest)
         {
-            throw new NotImplementedException();
+            User userEntity = new User();
+            userEntity.Name = userRequest.Name;
+            userEntity.UserName = userRequest.UserName;
+            userEntity.Email = userRequest.Email;
+            userEntity.Password = userRequest.Password;
+            userEntity.CommentId = userRequest.CommentId;
+            return await userRepositoryAsync.InsertAsync(userEntity);
         }
 
-        public Task<int> DeleteUserAsync(int id)
+        public async Task<int> DeleteUserAsync(int id)
         {
-            throw new NotImplementedException();
+            return await userRepositoryAsync.DeleteAsync(id);
         }
 
         public async Task<IEnumerable<UserResponseModel>> GetAllAsync()
@@ -39,10 +46,11 @@ namespace project3444.Infrastructure.Service
                 {
                     UserResponseModel responseModel = new UserResponseModel();
                     responseModel.Id = item.Id;
+                    responseModel.Name = item.Name;
                     responseModel.UserName = item.UserName;
                     responseModel.Email = item.Email;
                     var comment = await commentRepositoryAsync.GetByIdAsync(item.CommentId);
-                    responseModel.Comment = comment;
+                    responseModel.CommentId = comment.Id;
                     result.Add(responseModel);
 
                 }
@@ -53,19 +61,49 @@ namespace project3444.Infrastructure.Service
 
         }
 
-        public Task<UserResponseModel> GetByIdAsync(int id)
+        public async Task<UserResponseModel> GetByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            var item = await userRepositoryAsync.GetByIdAsync(id);
+            if (item != null)
+            {
+                UserResponseModel responseModel = new UserResponseModel();
+                responseModel.Id = item.Id;
+                responseModel.Name = item.Name;
+                responseModel.UserName = item.UserName;
+                responseModel.Email = item.Email;
+                var comment = await commentRepositoryAsync.GetByIdAsync(item.CommentId);
+                responseModel.Comment = comment;
+                return responseModel;
+            }
+            return null;
         }
 
-        public Task<UserRequestModel> GetUserForEditAsync(int id)
+        public async Task<UserRequestModel> GetUserForEditAsync(int id)
         {
-            throw new NotImplementedException();
+            var item = await userRepositoryAsync.GetByIdAsync(id);
+            if (item != null)
+            {
+                UserRequestModel model = new UserRequestModel();
+                model.Id = item.Id;
+                model.Name = item.Name;
+                model.UserName = item.UserName;
+                model.Email = item.Email;
+                model.Password = item.Password;
+                return model;
+            }
+            return null;
         }
 
-        public Task<int> UpdateUserAsync(UserRequestModel userRequest)
+        public async Task<int> UpdateUserAsync(UserRequestModel userRequest)
         {
-            throw new NotImplementedException();
+            User user = new User();
+            user.Id = userRequest.Id;
+            user.UserName = userRequest.UserName;
+            user.Email = userRequest.Email;
+            user.Password = userRequest.Password;
+            user.Name = userRequest.Name;
+            user.CommentId = userRequest.CommentId;
+            return await userRepositoryAsync.UpdateAsync(user);
         }
     }
 }

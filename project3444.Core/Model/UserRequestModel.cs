@@ -12,17 +12,17 @@ namespace project3444.Core.Model
     {
         public int Id { get; set; }
 
-        [Required, Column(TypeName = "varchar")]
+        [Required]
         public string Name { get; set; }
 
-        [Required, Column(TypeName = "varchar")]
+        [Required]
         public string Email { get; set; }
 
-        [Required, Column(TypeName = "varchar")]
+        [Required]
         public string UserName { get; set; }
 
-        [Required, Column(TypeName = "varchar")]
-        [MinLength(8)]
+        [Required]
         public string Password { get; set; }
+        public int CommentId { get; set; }
     }
 }
