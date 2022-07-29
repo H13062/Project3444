@@ -39,7 +39,6 @@ const Comment = () => {
 
   return (
     <div className="app__comment">
-      <Navbar />
       <div className="app__comment-header">
         <h1>Comment</h1>
         <p>Let us know about our experience</p>
@@ -80,8 +79,5 @@ const Comment = () => {
     </div>
   );
 };
-
-
-
 
 export default Comment;

@@ -4,7 +4,6 @@ import { Navbar } from "../../component";
 import { Link } from "react-router-dom";
 
 const Home = () => {
-
   const apiServerEndpoint = "/api/";
 
   // const [testedArray, setTestedArray] = useState(null);
@@ -26,7 +25,6 @@ const Home = () => {
   return (
     <div className="full-page">
       <div className="Wrapper">
-        <Navbar />
         <div className="header-content">
           <div className="Logo">
             <h1>LOGO</h1>
