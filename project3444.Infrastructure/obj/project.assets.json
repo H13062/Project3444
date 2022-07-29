@@ -2611,11 +2611,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ko\\project3444\\project3444.Infrastructure\\project3444.Infrastructure.csproj",
+      "projectUniqueName": "D:\\CSCE3444\\project3444.Infrastructure\\project3444.Infrastructure.csproj",
       "projectName": "project3444.Infrastructure",
-      "projectPath": "D:\\ko\\project3444\\project3444.Infrastructure\\project3444.Infrastructure.csproj",
+      "projectPath": "D:\\CSCE3444\\project3444.Infrastructure\\project3444.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\bgh15\\.nuget\\packages\\",
-      "outputPath": "D:\\ko\\project3444\\project3444.Infrastructure\\obj\\",
+      "outputPath": "D:\\CSCE3444\\project3444.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2636,8 +2636,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\ko\\project3444\\project3444.Core\\project3444.Core.csproj": {
-              "projectPath": "D:\\ko\\project3444\\project3444.Core\\project3444.Core.csproj"
+            "D:\\CSCE3444\\project3444.Core\\project3444.Core.csproj": {
+              "projectPath": "D:\\CSCE3444\\project3444.Core\\project3444.Core.csproj"
             }
           }
         }
