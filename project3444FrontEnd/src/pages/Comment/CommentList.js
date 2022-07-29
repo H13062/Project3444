@@ -12,7 +12,6 @@ const CommentList = ({ comments }) => {
       {Object.keys(comments).map((key) => {
         return (
           <>
-            {console.log("This is comments dit me: ", comments)}
             <tr className="comment-list" key={comments[key].id}>
               <th scope="row">{comments[key].id}</th>
               <td>{comments[key].description}</td>

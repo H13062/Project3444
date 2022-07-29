@@ -5,6 +5,9 @@ import { images } from "../../constants";
 import { Navbar } from "../../component";
 import CommentList from "./CommentList";
 const Comment = () => {
+  // useState for comment submit properties
+  const [description, setDescription] = useState("");
+
   const [comments, setComments] = useState(null);
   const apiServerEndpoint = "/api/";
   useEffect(() => {
@@ -21,6 +24,19 @@ const Comment = () => {
       });
   }, []);
 
+  const onCommentSubmitHandler = (e) => {
+    e.preventDefault();
+    const currentDate = new Date();
+    fetch("https://localhost:7169" + apiServerEndpoint + "comment", {
+      mode: "cors",
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ description: description, dateTime: currentDate }),
+    }).then(() => {
+      console.log("new comment added");
+    });
+  };
+
   return (
     <div className="app__comment">
       <Navbar />
@@ -30,8 +46,18 @@ const Comment = () => {
       </div>
       <div className="app__comment-field">
         <div className="app__comment-field_input">
-          <textarea placeholder="Give us your comment on the rerstaurant" />
-          <button type="submit">Post Comment</button>
+          <h2>Write your comment</h2>
+          <form onSubmit={onCommentSubmitHandler}>
+            <textarea
+              type="text"
+              required
+              value={description}
+              onChange={(e) => {
+                setDescription(e.target.value);
+              }}
+            ></textarea>
+            <button>Add Comment</button>
+          </form>
         </div>
 
         <div className="comment-dash"></div>
