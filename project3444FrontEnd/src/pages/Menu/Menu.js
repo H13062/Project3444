@@ -62,9 +62,7 @@ class Menu extends React.Component {
                         </div>
                         <div className='header-button'>
                             <button type='button' disabled={!this.state.isDisabled} >
-                                <Link to ="/home">
-                                    Order to cart
-                                </Link>
+                                Order to cart
                             </button>
                         </div>
                     </div>

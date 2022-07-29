@@ -4,6 +4,7 @@ import { Navbar } from "../../component";
 import { Link } from "react-router-dom";
 
 const Home = () => {
+
   const apiServerEndpoint = "/api/";
 
   // const [testedArray, setTestedArray] = useState(null);

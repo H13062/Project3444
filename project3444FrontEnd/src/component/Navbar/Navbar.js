@@ -1,5 +1,4 @@
 import React from 'react'
-import {images} from '../../constants';
 import { Link } from 'react-router-dom'
 import { GiHamburgerMenu } from 'react-icons/gi'; //must import from folder gi in react icons
 import {MdShoppingCart, MdOutlineRestaurantMenu} from 'react-icons/md'; //must import from folder md from react icons

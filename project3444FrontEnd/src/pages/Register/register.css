@@ -17,7 +17,8 @@
     justify-content: center;
     text-align: center;
     position: relative;
-    height: 100%;
+    height: fit-content;
+    padding: 2rem 0;
     z-index: 3;
     color:white;
     background-color: black;
@@ -119,7 +120,7 @@
 }
 
 /* Login*/
-.username, .email, .password, .confirm-password{
+.name, .username, .email, .password, .confirm-password{
     display: flex;
     justify-content: center;
     width: 100%;
@@ -146,4 +147,51 @@
     background-color:cornsilk;
     padding: 10px 30px;
     border-radius: 10px;
+}
+
+@media screen and (max-width: 1050px) {
+    .header h2{
+        font-size: 175%;
+    }
+    .form-body{
+        padding: 10px 0;
+        align-items: flex-start;
+    }
+    .name, .username, .email, .password, .confirm-password{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .form{
+        padding: 0;
+    }
+}
+@media screen and (max-width: 500px){
+    .login-header{
+        padding: 1rem 0 ;
+    }
+    .login-header h1{
+        font-size: 40px;
+    }
+    .login-header p{
+        font-size: 15px;
+    }
+    .login-registration{
+        flex-direction: column;
+    }
+    .split{
+        width: 100%;
+    }
+    .header h2{
+        font-size: 150%;
+    }
+    .form{
+        margin: 10px auto;
+    }
+    .form-body{
+        padding: 5px 0;
+    }.left .centered{
+        padding-top: 10px;
+    }
 }

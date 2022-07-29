@@ -9,13 +9,13 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/login" element={<Register />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/contacts" element={<Contact />} />
-          <Route path="/comment" element={<Comment />} />
-          <Route path="/menu" element={<Menu />} />
+          <Route path="/project3444" element={<Home/>}/>
+          <Route path="/home" element={<Home/>}/>
+          <Route path="/login" element={<Register />}/>
+          <Route path="/about" element={<AboutUs />}/>
+          <Route path="/contacts" element={<Contact />}/>
+          <Route path="/comment" element={<Comment />}/>
+          <Route path="/menu" element={<Menu />}/>
         </Routes>
       </Router>
       {/* <Register /> */}
