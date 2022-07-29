@@ -2,43 +2,47 @@ import React from 'react'
 import './Menu.css'
 import {images} from '../../constants';
 import {Navbar} from "../../component"
-import { Link } from 'react-router-dom'
 
 class Menu extends React.Component {
+    // store state
     constructor(prop){
         super(prop);
         let imgSelectedTemp = {}
         const imglist = [images.pho, images.tk, images.bb, images.bm, images.bc, images.roll, images.hotpot, images.ct]
 
+        // loop thru each image to set initial states
         for (let index = 0; index < imglist.length; index++) {
             imgSelectedTemp['image_' + index] = false;
         }
 
+        // assign state
         this.state = {
-            isDisabled: false,
-            imgSelected: imgSelectedTemp,
-            imglist: imglist
+            isEnabled: false, //button state
+            imgSelected: imgSelectedTemp, //images' states
+            imglist: imglist //images
         }
     }
 
+    // handle events whenever an image is clicked:
+    // -toggle css
+    // -run button enabling logic
     handleClicked(event){
         event.target.classList.toggle('card-click');
+    
+        const id = event.target.id;                     // get ID from image
+        var imgSelectedTemp = this.state.imgSelected;   // var variable that stores the images' state
+        imgSelectedTemp[id] = !imgSelectedTemp[id];     // change state from false to true and vice versa
 
-        const id = event.target.id;
-        var imgSelectedTemp = this.state.imgSelected;
-        imgSelectedTemp[id] = !imgSelectedTemp[id];
-
+        // toggle state of image, then check if theres at least one img with true state
+        // if yes, enable button (isEnabled : true)
+        // if no, disable button (isEnabled : false)
         for (let imgTemp in imgSelectedTemp) {
             if(imgSelectedTemp[imgTemp] === true){
-                this.setState({
-                    isDisabled: true
-                })
+                this.setState({ isEnabled: true })
                 break;
             }
             else{
-                this.setState({
-                    isDisabled: false
-                })
+                this.setState({ isEnabled: false })
             }
         }
     }   
@@ -61,7 +65,8 @@ class Menu extends React.Component {
                             </div>
                         </div>
                         <div className='header-button'>
-                            <button type='button' disabled={!this.state.isDisabled} >
+                            {/* state applied here */}
+                            <button type='button' disabled={!this.state.isEnabled} >
                                 Order to cart
                             </button>
                         </div>
@@ -71,8 +76,7 @@ class Menu extends React.Component {
                         <div className='app__menu-img_container' ref='imgContainer'>
                             {imageList.map((image, index) => (
                                 <div className='app__menu-img_card' 
-                                onClick={this.handleClicked.bind(this)} 
-                                disabled={!this.state.isDisabled} 
+                                onClick={this.handleClicked.bind(this)} // handleCLicked function call
                                 key={`menu_img${index + 1}`} 
                                 >
                                     <img src={image} alt='menu img' id={'image_' + index}/>
