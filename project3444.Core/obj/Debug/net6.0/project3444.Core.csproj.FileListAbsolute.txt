@@ -10,3 +10,15 @@ D:\CSCE3444\project3444.Core\obj\Debug\net6.0\project3444.Core.dll
 D:\CSCE3444\project3444.Core\obj\Debug\net6.0\refint\project3444.Core.dll
 D:\CSCE3444\project3444.Core\obj\Debug\net6.0\project3444.Core.pdb
 D:\CSCE3444\project3444.Core\obj\Debug\net6.0\ref\project3444.Core.dll
+D:\3\project3444.Core\bin\Debug\net6.0\project3444.Core.deps.json
+D:\3\project3444.Core\bin\Debug\net6.0\project3444.Core.dll
+D:\3\project3444.Core\bin\Debug\net6.0\project3444.Core.pdb
+D:\3\project3444.Core\obj\Debug\net6.0\project3444.Core.csproj.AssemblyReference.cache
+D:\3\project3444.Core\obj\Debug\net6.0\project3444.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\3\project3444.Core\obj\Debug\net6.0\project3444.Core.AssemblyInfoInputs.cache
+D:\3\project3444.Core\obj\Debug\net6.0\project3444.Core.AssemblyInfo.cs
+D:\3\project3444.Core\obj\Debug\net6.0\project3444.Core.csproj.CoreCompileInputs.cache
+D:\3\project3444.Core\obj\Debug\net6.0\project3444.Core.dll
+D:\3\project3444.Core\obj\Debug\net6.0\refint\project3444.Core.dll
+D:\3\project3444.Core\obj\Debug\net6.0\project3444.Core.pdb
+D:\3\project3444.Core\obj\Debug\net6.0\ref\project3444.Core.dll

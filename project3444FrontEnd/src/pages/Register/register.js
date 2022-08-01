@@ -1,8 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./register.css";
 import { Navbar } from "../../component";
 
 const Register = () => {
+  const apiServerEndpoint = "/api/";
+
+  // const [testedArray, setTestedArray] = useState(null);
+  const [users, setUsers] = useState(null);
+  useEffect(() => {
+    fetch("https://localhost:7169" + apiServerEndpoint + "user", {
+      mode: "cors",
+      method: "GET",
+    })
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        setUsers(data);
+        console.log(data);
+      });
+  }, []);
   return (
     <>
       <div className="login-page">
