@@ -1,211 +1,224 @@
-.app__menu{
-    display: flex;
-    flex-direction: column; 
-    justify-content: flex-start;
-    background-color: rgb(238, 235, 221);
-    height: 100%;
-    overflow: auto;
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: rgb(238, 235, 221);
+  height: 100%;
+  overflow: auto;
+  padding: 3rem 0 0 3rem;
+  max-width: 100%;
 }
 
-.app__menu-header{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 3rem 0 0 3rem;
-    max-width: 100%;
-    margin-right: 3rem;
+.row {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 2rem;
 }
 
-.app__menu-header h1{
-    font-size: 50px;
-    letter-spacing: 0.04rem;
-    margin-bottom: 1rem;
+.app__menu-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 0 0 3rem;
+  max-width: 100%;
+  margin-right: 3rem;
 }
 
-.header-content{
-    display: flex;
-    flex-direction: column;
+.menu h1 {
+  font-size: 50px;
+  letter-spacing: 0.04rem;
+  margin-bottom: 1rem;
 }
 
-.header-p p{
-    letter-spacing: 0.04rem;
+.header-content {
+  display: flex;
+  flex-direction: column;
 }
 
-.header-button button{
-    font-size: 25px;
-    letter-spacing: 0.04rem;
-    height: 5rem;
-    width: 16.5rem;
-    border-radius: 12px;
-    cursor: pointer;
-    background-color: rgb(208, 187, 150);
-    border: none;
-    transition: 0.2s ease;
+.menu p {
+  letter-spacing: 0.04rem;
 }
 
-.header-button button:disabled, .header-button button[disabled]{
-    opacity: 0.6;
-    width: 14rem;
-    height: 4rem;
-    font-size: 20px;
-    pointer-events: none;
+.header-button button {
+  font-size: 25px;
+  letter-spacing: 0.04rem;
+  height: 5rem;
+  width: 16.5rem;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: rgb(208, 187, 150);
+  border: none;
+  transition: 0.2s ease;
 }
 
-.header-button button:hover{
-    outline: 5px solid rgb(148, 131, 101);
+.header-button button:disabled,
+.header-button button[disabled] {
+  opacity: 0.6;
+  width: 14rem;
+  height: 4rem;
+  font-size: 20px;
+  pointer-events: none;
 }
 
-.header-button button:disabled:hover, .header-button button[disabled]:hover{
-    outline: none;
+.header-button button:hover {
+  outline: 5px solid rgb(148, 131, 101);
 }
 
-.app__menu-dash{
-    background-color: black;
-    height: 3px;
-    width: 30%;
-    margin-left: 3rem;
-    margin-top: 2rem;
+.header-button button:disabled:hover,
+.header-button button[disabled]:hover {
+  outline: none;
 }
 
-.app__menu-img{
-    display: flex;
-    position: relative;
-    height: 100%;
-    align-items: flex-start;
-    align-items: center;
+.app__menu-dash {
+  background-color: black;
+  height: 3px;
+  width: 30%;
+  margin-left: 3rem;
+  margin-top: 2rem;
 }
 
-.app__menu-img_container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    align-items: flex-start;
-    padding: 1rem 3rem; 
-    height: 90%;
-    scroll-snap-type: x mandatory;
+.app__menu-img {
+  display: flex;
+  position: relative;
+  height: 100%;
+  align-items: flex-start;
+  align-items: center;
 }
 
-.app__menu-img_container:hover{
-    overflow-x: scroll;
-    
+.app__menu-img_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  align-items: flex-start;
+  padding: 1rem 3rem;
+  height: 90%;
+  scroll-snap-type: x mandatory;
 }
 
-.app__menu-img_card{
-    position: relative;
-    max-width: 300px;
-    max-height: 300px;
-    margin-right: 3rem;
-    scroll-margin: 0 3rem;
-    box-shadow: 0px 2px 4px 0 rgba(63, 55, 7, 0.5);
-    border-radius: 10px;
+.app__menu-img_container:hover {
+  overflow-x: scroll;
 }
 
-.card-click{
-    outline: 10px solid rgb(208, 187, 150);
+.app__menu-img_card {
+  position: relative;
+  max-width: 300px;
+  max-height: 300px;
+  margin-right: 3rem;
+  scroll-margin: 0 3rem;
+  box-shadow: 0px 2px 4px 0 rgba(63, 55, 7, 0.5);
+  border-radius: 10px;
 }
 
-.app__menu-img_card img + div{
-    opacity: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    position: absolute;
-    bottom: 0%;
-    width: 100%;
-    height: fit-content;
-    background-color: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    padding: 1rem 0;
-    transition: 0.3s ease;
+.card-click {
+  outline: 10px solid rgb(208, 187, 150);
 }
 
-.app__menu-img_card img:hover + div{
-    opacity: 1;
+.app__menu-img_card img + div {
+  opacity: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: fit-content;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 1rem 0;
+  transition: 0.3s ease;
 }
 
-.app__menu-img_card:active{
-    outline: 10px solid rgb(208, 187, 150);
+.app__menu-img_card img:hover + div {
+  opacity: 1;
 }
 
-.app__menu-img_card img{
-    max-width: 300px;
-    max-height: 300px;
-    object-fit: cover;
-    transition: 0.3s ease;
-    border-radius: 10px;
+.app__menu-img_card:active {
+  outline: 10px solid rgb(208, 187, 150);
 }
 
-#clicked{
-    display: none;
-    position: absolute;
+.app__menu-img_card img {
+  max-width: 300px;
+  max-height: 300px;
+  object-fit: cover;
+  transition: 0.3s ease;
+  border-radius: 10px;
 }
 
-#clicked:checked + label > div{
-    outline: 10px solid rgb(208, 187, 150); 
+#clicked {
+  display: none;
+  position: absolute;
+}
+
+#clicked:checked + label > div {
+  outline: 10px solid rgb(208, 187, 150);
 }
 
 @media screen and (max-width: 850px) {
-    .app__menu-header{
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 2rem 0 0 2rem;
-        margin-right: 2rem;
-    }
-    .header-button{
-        margin-top: 2rem;
-        width: 100%;
-    }
-    .header-button button{
-        font-size: 20px;
-        width: 100%;
-        height: 3.5rem;
-    }
-    .header-button button:disabled, .header-button button[disabled]{
-        height: 3.5rem;
-        width: 100%;
-    }
-    .header-button button:hover{
-        outline: none;
-    }
-    .app__menu-header h1{
-        /* font-size: 40px; */
-        letter-spacing: 0.04rem;
-        margin-bottom: 0.5rem;
-    }
-    .header-p p{
-        /* font-size: 14px; */
-    }
-    .app__menu-img{
-        padding-top: 0;
-    }
-    .app__menu-dash{
-        display: none;
-    }
-    .app__menu-img_container{
-        padding: 1rem 2rem; 
-        height: 90%;
-    }
-    .app__menu-img_card{
-        /* max-width: 100%; */
-        height: 90%;
-        scroll-margin: 0 2rem;
-        margin-right: 2rem;
-    }
-    .app__menu-img_card img{
-        /* max-width: 200px; */
-        max-height: 100%;
-        object-fit: cover;
-    }
-    .app__menu-img_card:hover:active > div{
-        opacity: 1;
-    }
-    .app__menu-img_card:hover > div{
-        opacity: 0;
-    }
+  .menu {
+    padding: 1rem 0 0 1rem;
+  }
+  .app__menu-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 0 0 2rem;
+    margin-right: 2rem;
+  }
+  .header-button {
+    margin-top: 2rem;
+    width: 100%;
+  }
+  .header-button button {
+    font-size: 20px;
+    width: 100%;
+    height: 3.5rem;
+  }
+  .header-button button:disabled,
+  .header-button button[disabled] {
+    height: 3.5rem;
+    width: 100%;
+  }
+  .header-button button:hover {
+    outline: none;
+  }
+  .app__menu-header h1 {
+    /* font-size: 40px; */
+    letter-spacing: 0.04rem;
+    margin-bottom: 0.5rem;
+  }
+  .header-p p {
+    /* font-size: 14px; */
+  }
+  .app__menu-img {
+    padding-top: 0;
+  }
+  .app__menu-dash {
+    display: none;
+  }
+  .app__menu-img_container {
+    padding: 1rem 2rem;
+    height: 90%;
+  }
+  .app__menu-img_card {
+    /* max-width: 100%; */
+    height: 90%;
+    scroll-margin: 0 2rem;
+    margin-right: 2rem;
+  }
+  .app__menu-img_card img {
+    /* max-width: 200px; */
+    max-height: 100%;
+    object-fit: cover;
+  }
+  .app__menu-img_card:hover:active > div {
+    opacity: 1;
+  }
+  .app__menu-img_card:hover > div {
+    opacity: 0;
+  }
 }

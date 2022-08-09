@@ -4,7 +4,6 @@ import { BsTelephoneFill } from "react-icons/bs";
 import { IoMdMail } from "react-icons/io";
 import { IoLocationSharp, IoTimeSharp } from "react-icons/io5";
 import { BsInstagram, BsTwitter, BsFacebook } from "react-icons/bs";
-import { Navbar } from "../../component";
 
 const contact = () => {
   return (

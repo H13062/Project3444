@@ -1,8 +1,6 @@
 import React from "react";
 import "./aboutus.css";
 import { images } from "../../constants";
-import { Navbar } from "../../component";
-
 const AboutUs = () => {
   return (
     <div className="app__aboutus">

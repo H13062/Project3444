@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./comment.css";
 import { Table } from "reactstrap";
 import { images } from "../../constants";
-import { Navbar } from "../../component";
 import CommentList from "./CommentList";
 const Comment = () => {
   // useState for comment submit properties
@@ -46,7 +45,7 @@ const Comment = () => {
       <div className="app__comment-field">
         <div className="app__comment-field_input">
           <h2>Write your comment</h2>
-          <form onSubmit={onCommentSubmitHandler}>
+          <form className="form-field" onSubmit={onCommentSubmitHandler}>
             <textarea
               type="text"
               required
@@ -61,7 +60,7 @@ const Comment = () => {
 
         <div className="comment-dash"></div>
 
-        <div className="app__comment-field_">
+        <div className="app__comment-table">
           <Table>
             <thead>
               <tr>
