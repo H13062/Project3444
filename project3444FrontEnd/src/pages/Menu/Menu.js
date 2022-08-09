@@ -41,8 +41,10 @@ const Menu = ({ cartItems, setCartItems }) => {
   return (
     <>
       <div className="menu">
-        <h1>MENU</h1>
-        <p>A list of our delicious authentic dishes and cuisine</p>
+        <div className="header">
+          <h1>MENU</h1>
+          <p>A list of our delicious authentic dishes and cuisine</p>
+        </div>
 
         <div className="row">
           {dishes.map((dish) => (

@@ -21,9 +21,9 @@ const NavMenu = (args) => {
   return (
     <div>
       <Navbar {...args} className="app__navbar">
-        <NavbarBrand style={{ fontSize: "45px" }} href="/">
-          LOGO
-        </NavbarBrand>
+        <div className="app__navbar-logo">
+          <NavbarBrand href="/">NON-EXISTENT RESTURANT</NavbarBrand>
+        </div>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto" navbar>

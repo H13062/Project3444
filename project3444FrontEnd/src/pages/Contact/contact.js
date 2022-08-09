@@ -3,7 +3,7 @@ import "./contact.css";
 import { BsTelephoneFill } from "react-icons/bs";
 import { IoMdMail } from "react-icons/io";
 import { IoLocationSharp, IoTimeSharp } from "react-icons/io5";
-import { BsInstagram, BsTwitter, BsFacebook } from "react-icons/bs";
+import { BsInstagram, BsTwitter, BsGithub } from "react-icons/bs";
 
 const contact = () => {
   return (
@@ -63,7 +63,9 @@ const contact = () => {
             <BsTwitter />
           </div>
           <div>
-            <BsFacebook />
+            <a href="https://github.com/h13062/project3444">
+              <BsGithub />
+            </a>
           </div>
         </div>
       </div>

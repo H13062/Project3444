@@ -13,7 +13,7 @@
 }
 /*NO logo at the moemnt*/
 .app__navbar-logo {
-  font-size: 45px;
+  display: flex;
 }
 
 .app__navbar-links {
@@ -116,9 +116,6 @@
 
 /*3 dash appear here*/
 @media screen and (max-width: 900px) {
-  .app__navbar-logo {
-    font-size: 35px;
-  }
   .app__navbar-links li {
     margin: 0 0.5rem;
   }

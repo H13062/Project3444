@@ -76,6 +76,7 @@
   }
   .app__aboutus-content_img img {
     max-width: 70%;
+    margin: 2rem;
     height: fit-content;
   }
   .about-dash {

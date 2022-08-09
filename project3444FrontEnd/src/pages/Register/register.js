@@ -27,10 +27,6 @@ const Register = () => {
 
   const onUserSubmitHandler = (e) => {
     e.preventDefault();
-    console.log(name);
-    console.log(email);
-    console.log(username);
-    console.log(password);
     fetch("https://localhost:7169" + apiServerEndpoint + "user", {
       mode: "cors",
       method: "POST",
@@ -64,7 +60,7 @@ const Register = () => {
         <div class="split left">
           <div class="centered">
             <div className="form">
-              <div className="header">
+              <div className="form-header">
                 <h2>Login</h2>
               </div>
               <div className="form-body">
@@ -99,7 +95,7 @@ const Register = () => {
                 </div>
 
                 <div class="footer">
-                  <button type="submit" class="btn">
+                  <button type="submit" className="btn btn-primary">
                     Login
                   </button>
                 </div>
@@ -113,7 +109,7 @@ const Register = () => {
         <div class="split right">
           <div class="centered">
             <div className="form">
-              <div className="header">
+              <div className="form-header">
                 <h2>Register</h2>
               </div>
               <form onSubmit={onUserSubmitHandler}>
@@ -177,7 +173,7 @@ const Register = () => {
                   </div>
                 </div>
                 <div class="footer">
-                  <button type="submit" class="btn">
+                  <button type="submit" className="btn btn-success">
                     Register
                   </button>
                 </div>

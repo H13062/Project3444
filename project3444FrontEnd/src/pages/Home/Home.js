@@ -26,16 +26,16 @@ const Home = () => {
       <div className="Wrapper">
         <div className="header-content">
           <div className="Logo">
-            <h1>LOGO</h1>
+            <h1>NON-EXISTENT RESTURANT</h1>
           </div>
           <div className="Logo-p">
             <p>An authentic Vietnamese culinary experience</p>
           </div>
           <div className="button-space">
             <div className="left-button">
-              <button type="button" onClick={() => {}}>
-                <Link to="/menu">View menu</Link>
-              </button>
+              <Link to="/menu">
+                <button type="button">View Menu</button>
+              </Link>
             </div>
           </div>
         </div>
