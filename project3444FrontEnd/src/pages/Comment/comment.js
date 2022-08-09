@@ -61,18 +61,7 @@ const Comment = () => {
         <div className="comment-dash"></div>
 
         <div className="app__comment-table">
-          <Table>
-            <thead>
-              <tr>
-                <th>Id</th>
-                <th>Description</th>
-                <th>Date Time</th>
-              </tr>
-            </thead>
-            <tbody>
-              {comments && <CommentList comments={comments}></CommentList>}
-            </tbody>
-          </Table>
+          {comments && <CommentList comments={comments}></CommentList>}
         </div>
       </div>
     </div>

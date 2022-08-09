@@ -12,11 +12,13 @@ const CommentList = ({ comments }) => {
       {Object.keys(comments).map((key) => {
         return (
           <>
-            <tr className="comment-list" key={comments[key].id}>
-              <th scope="row">{comments[key].id}</th>
-              <td>{comments[key].description}</td>
-              <td>{comments[key].dateTime.toString().substring(0, 10)}</td>
-            </tr>
+            <div className="table-desc">
+              <p>"{comments[key].description}"</p>
+            </div>
+            <div className="table-date">
+              <p>-{comments[key].dateTime.toString().substring(0, 10)}</p>
+            </div>
+            <br />
           </>
         );
       })}

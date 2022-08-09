@@ -96,6 +96,16 @@
   width: 50%;
 }
 
+.table-desc,
+.table-date {
+  line-height: 25px;
+}
+
+.table-desc p {
+  font-size: 20px;
+  font-weight: 700;
+}
+
 @media screen and (max-width: 900px) {
   .app__comment {
     overflow-y: auto;
